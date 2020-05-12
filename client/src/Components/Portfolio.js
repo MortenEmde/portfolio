@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Gallery() {
+function Portfolio() {
   return (
-    <div className="Gallery">
-      <h1>Hello Gallery!</h1>
+    <div className="Portfolio">
+      <h1>Hello Portfolio!</h1>
       <p>reactPlayground: playspace for me to practice React</p>
       <p>hackday: 1 day exercise to integrate frontend with backend extenal api call</p>
       <p>&lt;/Salt&gt;: Fullstack JavaScript bootcamp</p>
@@ -16,4 +16,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default Portfolio;
