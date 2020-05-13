@@ -1,31 +1,11 @@
 import React from 'react';
 import '../Styles/CV.css';
-import logo from '../Styles/Images/logo512.png';
+import Sidebar from './Sidebar';
 
 function CV() {
   return (
     <div className="CV">
-      <aside className="CVSidebar">
-        <img className="HeadShot" src={logo} alt="Logo" />
-        <h2 className="ContactHeader">CONTACT</h2>
-        <ul className="ContactList">
-          <li className="ContactItem">
-            +31 (0)613993521
-          </li>
-          <li className="ContactItem">
-            mortenemdec@gmail.com
-          </li>
-          <li className="ContactItem">
-            George Gershwinlaan 519,<br/>Amsterdam,<br/>The Netherlands
-          </li>
-          <li className="ContactItem">
-            <a href="https://github.com/MortenEmde">GitHub</a>
-          </li>
-          <li className="ContactItem">
-            <a href="https://linkedin.com/in/morten-emde-christensen">LinkedIn</a>
-          </li>
-        </ul>
-      </aside>
+      <Sidebar />
       <div className="CVContent">
         <h2 className="SubHeader">EDUCATION AND TRAINING</h2>
         <div className="Job">
@@ -39,6 +19,33 @@ function CV() {
             <li className="JobTask">
               Highly paced and very intense training program. Turning hobby coders into productive full stack developers.
             </li>
+          </ul>
+        </div>
+        <div className="Job">
+          <h4 className="JobTitle">
+            ELECTRICIAN
+          </h4>
+          <h5 className="JobDuration">
+            Selandia - Center for Erhvervsrettet Uddannelse / Slagelse - Denmark / August 2006 - January 2011 
+          </h5>
+          <ul className="JobDescription">
+            <li className="JobTask">
+              Graduation assignment -  Designing and building a complete Inteliget House Control (IHC) Including:
+            </li>
+            <ul className="SubList">
+              <li className="SubListItem">
+                Programmable lighting, ventilation and alarm-systems.
+              </li>
+              <li className="SubListItem">
+                Thorough documentation.
+              </li>
+              <li className="SubListItem">
+                Diagrams, drawings and formulas.
+              </li>
+              <li className="SubListItem">
+                An on-line control panel.
+              </li>
+            </ul>
           </ul>
         </div>
         <h2 className="SubHeader">WORK EXPERIENCE</h2>
@@ -172,17 +179,117 @@ function CV() {
         </h5>
         <ul className="JobDescription">
           <li className="JobTask">
-            Private, office and industrial electrical installations
+            Private, office and industrial electrical installations.
           </li>
         </ul>
         <h2 className="SubHeader">TECHNOLOGIES</h2>
+        <div className="Tech">
+          <h4 className="TechType">
+            GENERAL
+          </h4>
+          <ul className="TechList">
+            <li className="TechItem">
+              Javascript/ES6
+            </li>
+          </ul>
+        </div>
+        <div className="Tech">
+          <h4 className="TechType">
+            BACKEND
+          </h4>
+          <ul className="TechList">
+            <li className="TechItem">
+              Node.js
+            </li>
+            <li className="TechItem">
+              Express
+            </li>
+            <li className="TechItem">
+              REST
+            </li>
+            <li className="TechItem">
+              HTTP/JSON/AJAX
+            </li>
+            <li className="TechItem">
+              MongoDB
+            </li>
+            <li className="TechItem">
+              SQL
+            </li>
+            <li className="TechItem">
+              Handlebars
+            </li>
+          </ul>
+        </div>
+        <div className="Tech">
+          <h4 className="TechType">
+            FRONTEND
+          </h4>
+          <ul className="TechList">
+            <li className="TechItem">
+              React
+            </li>
+            <li className="TechItem">
+              React Native
+            </li>
+            <li className="TechItem">
+              Redux
+            </li>
+            <li className="TechItem">
+              HTML
+            </li>
+            <li className="TechItem">
+              jQuery
+            </li>
+            <li className="TechItem">
+              CSS, SASS, LESS
+            </li>
+          </ul>
+        </div>
+        <div className="Tech">
+          <h4 className="TechType">
+            TOOLS AND PROCESSES
+          </h4>
+          <ul className="TechList">
+            <li className="TechItem">
+              Visual Studio Code
+            </li>
+            <li className="TechItem">
+              NPM
+            </li>
+            <li className="TechItem">
+              Yarn
+            </li>
+            <li className="TechItem">
+              Mocha
+            </li>
+            <li className="TechItem">
+              Git
+            </li>
+            <li className="TechItem">
+              Express
+            </li>
+            <li className="TechItem">
+              TDD
+            </li>
+            <li className="TechItem">
+              Linting
+            </li>
+            <li className="TechItem">
+              Agile work methods
+            </li>
+            <li className="TechItem">
+              Lean and Six Sigma methods
+            </li>
+          </ul>
+        </div>
         <h2 className="SubHeader">CERTIFICATES</h2>
           <ul className="CertificateList">
             <li className="Certificate">
               &lt;/Salt&gt; Fullstack JavaScript Bootcamp - 2020
             </li>
             <li className="Certificate">
-              BHV office saftety - 2019
+              BHV basic in-house emergency response training - 2019
             </li>
             <li className="Certificate">
               Gert van Grunsven Management workshop - 2018
@@ -208,6 +315,9 @@ function CV() {
             <li className="Certificate">
               Amadeus Alcyon Software - 2011
             </li>
+            <li>
+              Electricians degree - 2011 
+            </li>
           </ul>
         <h2 className="SubHeader">SPOKEN LANGUAGES</h2>
           <ul className="LanguageList">
@@ -228,13 +338,3 @@ function CV() {
 }
 
 export default CV;
-
-{/* <div className="Job">
-<h4 className="JobTitle"></h4>
-<h5 className="JobDuration"></h5>
-<ul className="JobDescription">
-  <li className="JobTask"></li>
-  <li className="JobTask"></li>
-  <li className="JobTask"></li>
-</ul>
-</div> */}

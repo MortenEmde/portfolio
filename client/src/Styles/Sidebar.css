@@ -1,0 +1,36 @@
+.CVSidebar {
+  background-color: #333;
+  position: fixed;
+  width: 230px;
+  height: 100%;
+  margin-top: -13px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #111;
+  color: whitesmoke;
+}
+
+.HeadShot {
+  width: 200px;
+  align-self: center;
+  padding-top: 15px;
+}
+
+.ContactHeader {
+  align-self: center;
+
+}
+
+.ContactList {
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.ContactItem {
+  margin: 10px 0;
+}
+
+.ContactItem a {
+  color: whitesmoke;
+}
