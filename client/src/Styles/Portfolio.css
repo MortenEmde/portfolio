@@ -1,0 +1,25 @@
+.PortfolioLinks {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.PortfolioItemRow {
+  display: flex;
+  margin: 0 auto;
+}
+
+.PortfolioItem {
+  background-color: #333;
+  width: 400px;
+  height: 270.53px;
+  text-align: center;
+}
+
+.PortfolioImage {
+  max-width: 400px;
+}
+
+.PortfolioImageTall {
+  max-height: 270.53px;
+}
