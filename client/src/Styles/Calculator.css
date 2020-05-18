@@ -1,0 +1,9 @@
+.Calculator {
+  margin-top: 60px;
+}
+
+.CalculatorImage {
+  height: 400px;
+  border: 1px solid #111;
+  border-radius: 10px;
+}

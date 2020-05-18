@@ -1,13 +1,13 @@
 import React from 'react';
 import '../Styles/About.css';
-import Sidebar from './Sidebar';
+import Sidebar from '../Components/Sidebar';
 
 function About() {
   return (
     <div className="About">
       <Sidebar />
       <div className="AboutContent">
-        <h1>
+        <h1 className="AboutHeader">
           Morten Emde Christensen
         </h1>
         <p>

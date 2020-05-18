@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/CV.css';
-import Sidebar from './Sidebar';
+import Sidebar from '../Components/Sidebar';
 
 function CV() {
   return (

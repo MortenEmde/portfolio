@@ -1,0 +1,9 @@
+.Hackday {
+  margin-top: 60px;
+}
+
+.HackdayImage {
+  height: 600px;
+  border: 1px solid #111;
+  border-radius: 10px;
+}

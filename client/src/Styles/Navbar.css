@@ -1,0 +1,30 @@
+.NavBar {
+  background-color: #333;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  border: 1px solid #111;
+  z-index: 6;
+}
+
+.NavLink a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #111;
+  min-width: 105px;
+}
+
+.NavLink a:hover {
+  background-color: #111;
+}
+
+.NavContent {
+  margin-top: 49px;
+}
