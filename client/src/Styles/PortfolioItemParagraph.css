@@ -1,0 +1,19 @@
+.PortfolioItemParagraph {
+  display: flex;
+
+}
+
+.PortfolioItemParagraphText {
+  width: 97%;
+  margin: 0;
+  padding: 28px 10px;
+  background-color: white;
+}
+
+.PortfolioItemParagraphEmpty {
+  width: 100%;
+}
+
+.ParagraphImage {
+  width: 100%;
+}
