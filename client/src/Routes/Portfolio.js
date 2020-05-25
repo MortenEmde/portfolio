@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Portfolio.css';
+import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import centurylinkLogo from '../Styles/Images/centurylinkLogo.png';
 import hackdayLogo from '../Styles/Images/hackdayLogo.png';
 import saltLogo from '../Styles/Images/saltLogo.png';
@@ -10,12 +11,13 @@ import easLogo from '../Styles/Images/easLogo.png';
 import googlehomeLogo from '../Styles/Images/googlehomeLogo.png';
 
 function Portfolio() {
+  const headerText = "Portfolio";
   return (
     <div className="Portfolio">
-      <h1>My Portfolio</h1>
+      <PortfolioItemHeader headerText={headerText}/>
       <p>This whole website!</p>
       <div className="PortfolioLinks">
-        <Link to="/centurylink">
+        <Link to="/portfolio/centurylink">
         <div className="PortfolioItem">
           <img className="PortfolioImageTall" src={centurylinkLogo} alt="centurylinkLogo" />
           <div className="details">
@@ -29,7 +31,7 @@ function Portfolio() {
           </div>
         </div>
         </Link>
-        <Link to="/hackday">
+        <Link to="/portfolio/hackday">
           <div className="PortfolioItem">
             <img className="PortfolioImage" src={hackdayLogo} alt="hackdayLogo" />
             <div className="details">
@@ -43,7 +45,7 @@ function Portfolio() {
             </div>
           </div>
         </Link>
-        <Link to="/salt">
+        <Link to="/portfolio/salt">
           <div className="PortfolioItem">
             <img className="PortfolioImage" src={saltLogo} alt="saltLogo" />
             <div className="details">
@@ -52,12 +54,12 @@ function Portfolio() {
               </span>
               <br/>
               <span className="info">
-                My projects from &lt;/Salt&gt;'s winter 2020 fullstack JavaScript bootcamp 
+                My experience from &lt;/Salt&gt;'s winter 2020 fullstack JavaScript bootcamp 
               </span>
             </div>
           </div>
         </Link>
-        <Link to="/calculator">
+        <Link to="/portfolio/calculator">
           <div className="PortfolioItem">
             <img className="PortfolioImageTall" src={calculatorLogo} alt="calculatorLogo" />
             <div className="details">
@@ -71,7 +73,7 @@ function Portfolio() {
             </div>
           </div>
         </Link>
-        <Link to="/caesar">
+        <Link to="/portfolio/caesar">
           <div className="PortfolioItem">
             <img className="PortfolioImage" src={caesarLogo} alt="caesarLogo" />
             <div className="details">
@@ -85,7 +87,7 @@ function Portfolio() {
             </div>
           </div>
         </Link>
-        <Link to="/Etchasketch">
+        <Link to="/portfolio/Etchasketch">
           <div className="PortfolioItem">
             <img className="PortfolioImage" src={easLogo} alt="easLogo" />
             <div className="details">
@@ -99,12 +101,12 @@ function Portfolio() {
             </div>
           </div>
         </Link>
-        <Link to="/googlehomepage">
+        <Link to="/portfolio/googlehomepage">
           <div className="PortfolioItem">
             <img className="PortfolioImage" src={googlehomeLogo} alt="googlehomeLogo" />
             <div className="details">
               <span className="title">
-                Google Homepage
+                Mock Google Homepage
               </span>
               <br/>
               <span className="info">

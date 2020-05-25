@@ -12,6 +12,7 @@ import Calculator from './Calculator';
 import Caesar from './Caesar';
 import Etchasketch from './Etchasketch';
 import Googlehomepage from './Googlehomepage';
+import ScrollToTop from '../Components/ScrollToTop';
 
 function App() {
   return (
@@ -19,17 +20,18 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="Content">
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={AboutMe} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route exact path="/portfolio" component={Portfolio} />
           <Route path="/cv" component={CV} />
-          <Route path="/centurylink" component={Centurylink} />
-          <Route path="/hackday" component={Hackday} />
-          <Route path="/salt" component={Salt} />
-          <Route path="/calculator" component={Calculator} />
-          <Route path="/caesar" component={Caesar} />
-          <Route path="/Etchasketch" component={Etchasketch} />
-          <Route path="/googlehomepage" component={Googlehomepage} />
+          <Route path="/portfolio/centurylink" component={Centurylink} />
+          <Route path="/portfolio/hackday" component={Hackday} />
+          <Route path="/portfolio/salt" component={Salt} />
+          <Route path="/portfolio/calculator" component={Calculator} />
+          <Route path="/portfolio/caesar" component={Caesar} />
+          <Route path="/portfolio/Etchasketch" component={Etchasketch} />
+          <Route path="/portfolio/googlehomepage" component={Googlehomepage} />
         </Switch>
         </div>
       </div>

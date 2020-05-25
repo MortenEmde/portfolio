@@ -5,9 +5,10 @@
 
 .PortfolioItemParagraphText {
   width: 97%;
-  margin: 0;
-  padding: 28px 10px;
-  background-color: white;
+  margin: 0 auto;
+  padding: 28px 8px;
+  background-color: whitesmoke;
+  text-align: center;
 }
 
 .PortfolioItemParagraphEmpty {
