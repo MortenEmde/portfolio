@@ -1,20 +1,7 @@
-.PortfolioItemParagraph {
-  display: flex;
-
-}
-
 .PortfolioItemParagraphText {
-  width: 97%;
+  width: 95%;
   margin: 0 auto;
-  padding: 28px 8px;
+  padding: 12px 12px;
   background-color: whitesmoke;
   text-align: center;
-}
-
-.PortfolioItemParagraphEmpty {
-  width: 100%;
-}
-
-.ParagraphImage {
-  width: 100%;
 }

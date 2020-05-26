@@ -1,9 +1,6 @@
-.CV {
-  text-align: left;
-}
-
 .CVContent {
   margin: 72px 15px 25px 245px;
+  text-align: left;
 }
 
 .JobDescription, .LanguageList, .CertificateList, .TechList {

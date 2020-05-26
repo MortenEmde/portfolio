@@ -2,8 +2,7 @@ import React from 'react';
 import '../Styles/Hackday.css';
 import hackdayImage from '../Styles/Images/hackdayLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
-import PortfolioItemParagraphEven from '../Components/PortfolioItemParagraphEven';
-import PortfolioItemParagraphUneven from '../Components/PortfolioItemParagraphUneven';
+import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
 function Hackday() {
   const headerText = "Hackday";
@@ -15,18 +14,17 @@ function Hackday() {
   const paragraphText6 = "Here below you can see a screenshot of the result and you can find the code on my Github";
   const paragraphLink1 = "https://github.com/MortenEmde/hackday";
   const paragraphLinkText1 = "Here"
-  const paragraphImage1 = hackdayImage
-
   return (
     <div className="Hackday">
       <PortfolioItemHeader headerText={headerText}/>
       <div className="HackdayContent">
-        <PortfolioItemParagraphUneven paragraphText={paragraphText1} />
-        <PortfolioItemParagraphEven paragraphText={paragraphText2} />
-        <PortfolioItemParagraphUneven paragraphText={paragraphText3} />
-        <PortfolioItemParagraphEven paragraphText={paragraphText4} />
-        <PortfolioItemParagraphUneven paragraphText={paragraphText5} paragraphImage={paragraphImage1}/>
-        <PortfolioItemParagraphEven paragraphText={paragraphText6} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
+        <PortfolioItemParagraph paragraphText={paragraphText1} />
+        <PortfolioItemParagraph paragraphText={paragraphText2} />
+        <PortfolioItemParagraph paragraphText={paragraphText3} />
+        <PortfolioItemParagraph paragraphText={paragraphText4} />
+        <PortfolioItemParagraph paragraphText={paragraphText5} />
+        <PortfolioItemParagraph paragraphText={paragraphText6} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
+        <img className="HackdayImage" src={hackdayImage} alt="HackdayImage" />
       </div>
     </div>
   );

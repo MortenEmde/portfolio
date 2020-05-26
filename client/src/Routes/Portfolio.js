@@ -4,7 +4,7 @@ import '../Styles/Portfolio.css';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import centurylinkLogo from '../Styles/Images/centurylinkLogo.png';
 import hackdayLogo from '../Styles/Images/hackdayLogo.png';
-import saltLogo from '../Styles/Images/saltLogo.png';
+import todoLogo from '../Styles/Images/todoLogo.png';
 import calculatorLogo from '../Styles/Images/calculatorLogo.png';
 import caesarLogo from '../Styles/Images/caesarLogo.png';
 import easLogo from '../Styles/Images/easLogo.png';
@@ -45,16 +45,16 @@ function Portfolio() {
             </div>
           </div>
         </Link>
-        <Link to="/portfolio/salt">
+        <Link to="/portfolio/todo">
           <div className="PortfolioItem">
-            <img className="PortfolioImage" src={saltLogo} alt="saltLogo" />
+            <img className="PortfolioImage" src={todoLogo} alt="todoLogo" />
             <div className="details">
               <span className="title">
-                &lt;/Salt&gt;
+              To-Do List;
               </span>
               <br/>
               <span className="info">
-                My experience from &lt;/Salt&gt;'s winter 2020 fullstack JavaScript bootcamp 
+                My Take on a HTML To-Do List with local storage. 
               </span>
             </div>
           </div>

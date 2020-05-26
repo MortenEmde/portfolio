@@ -2,14 +2,19 @@ import React from 'react';
 import '../Styles/Centurylink.css';
 import centurylinkImage from '../Styles/Images/centurylinkLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
+import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
 function Centurylink() {
   const headerText = "Centurylink";
+  const paragraphText1 = "Centurylink Sustainability app";
+
   return (
     <div className="Centurylink">
       <PortfolioItemHeader headerText={headerText}/>
-      <p>Centurylink Sustainability app</p>
-      <img className="CenturylinkImage" src={centurylinkImage} alt="centurylinkImage" />
+      <div className="CenturylinkContent">
+        <PortfolioItemParagraph paragraphText={paragraphText1} />
+        <img className="CenturylinkImage" src={centurylinkImage} alt="centurylinkImage" />
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import Portfolio from './Portfolio';
 import CV from './CV';
 import Centurylink from './Centurylink';
 import Hackday from './Hackday';
-import Salt from './Salt';
+import ToDo from './ToDo';
 import Calculator from './Calculator';
 import Caesar from './Caesar';
 import Etchasketch from './Etchasketch';
@@ -27,7 +27,7 @@ function App() {
           <Route path="/cv" component={CV} />
           <Route path="/portfolio/centurylink" component={Centurylink} />
           <Route path="/portfolio/hackday" component={Hackday} />
-          <Route path="/portfolio/salt" component={Salt} />
+          <Route path="/portfolio/todo" component={ToDo} />
           <Route path="/portfolio/calculator" component={Calculator} />
           <Route path="/portfolio/caesar" component={Caesar} />
           <Route path="/portfolio/Etchasketch" component={Etchasketch} />
