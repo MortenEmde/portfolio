@@ -23,8 +23,8 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route exact path="/" component={AboutMe} />
-          <Route exact path="/portfolio" component={Portfolio} />
           <Route path="/cv" component={CV} />
+          <Route exact path="/portfolio" component={Portfolio} />
           <Route path="/portfolio/centurylink" component={Centurylink} />
           <Route path="/portfolio/hackday" component={Hackday} />
           <Route path="/portfolio/todo" component={ToDo} />

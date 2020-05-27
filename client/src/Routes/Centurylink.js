@@ -6,7 +6,7 @@ import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
 function Centurylink() {
   const headerText = "Centurylink";
-  const paragraphText1 = "Centurylink Sustainability app";
+  const paragraphText1 = "⛔️👷‍♂️⛔️This Page is still under construction. Once done it will cover: Centurylink Sustainability app";
 
   return (
     <div className="Centurylink">

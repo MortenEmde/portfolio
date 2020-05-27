@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Portfolio.css';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
+import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 import centurylinkLogo from '../Styles/Images/centurylinkLogo.png';
 import hackdayLogo from '../Styles/Images/hackdayLogo.png';
 import todoLogo from '../Styles/Images/todoLogo.png';
@@ -12,10 +13,16 @@ import googlehomeLogo from '../Styles/Images/googlehomeLogo.png';
 
 function Portfolio() {
   const headerText = "Portfolio";
+  const paragraphText1 = "This whole website has been put together by myself using react and hosted on Heroku. It is thereby an intyeractive part of my portfolio."
+  const paragraphText2 = "You can find the code for the full site on my Github";
+  const paragraphLink1 = "https://github.com/MortenEmde/portfolio";
+  const paragraphLinkText1 = "Here"
+
   return (
     <div className="Portfolio">
       <PortfolioItemHeader headerText={headerText}/>
-      <p>This whole website!</p>
+      <PortfolioItemParagraph paragraphText={paragraphText1} />
+      <PortfolioItemParagraph paragraphText={paragraphText2} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
       <div className="PortfolioLinks">
         <Link to="/portfolio/centurylink">
         <div className="PortfolioItem">
@@ -50,7 +57,7 @@ function Portfolio() {
             <img className="PortfolioImage" src={todoLogo} alt="todoLogo" />
             <div className="details">
               <span className="title">
-              To-Do List;
+              To-Do List
               </span>
               <br/>
               <span className="info">

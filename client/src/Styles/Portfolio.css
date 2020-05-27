@@ -8,14 +8,18 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1260px;
+}
+
+.PortfolioItem {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .PortfolioLinks .PortfolioItem {
   opacity: .99;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   width: 400px;
   height: 270px;
   backface-visibility: hidden;
@@ -101,14 +105,14 @@
   max-height: 270px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1260px) {
   .PortfolioLinks {
-    max-width: 800px;
+    max-width: 840px;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 840px) {
   .PortfolioLinks {
-    max-width: 400px;
+    max-width: 420px;
   }
 }
