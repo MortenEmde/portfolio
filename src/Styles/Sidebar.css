@@ -1,4 +1,4 @@
-.CVSidebar {
+.Sidebar {
   background-color: #333;
   position: fixed;
   width: 230px;
@@ -34,11 +34,20 @@
   color: whitesmoke;
 }
 
+/* large desktop */
+@media only screen 
+  and (min-width: 1645px) {
+    .Sidebar {
+      width: 414px;
+    }
+}
+
+/* iPhone x */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-    .CVSidebar {
+    .Sidebar {
       width: 135px;
     }
     .HeadShot {
@@ -46,6 +55,27 @@
     }
     .ContactList {
       padding: 0 5px;
+      font-size: 12px;
+    }
+    .ContactItem {
+      word-break: break-all;
+    }
+}
+
+/* Galaxy S6 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .Sidebar {
+      width: 135px;
+    }
+    .HeadShot {
+      width: 100px;
+    }
+    .ContactList {
+      padding: 0 5px;
+      font-size: 12px;
     }
     .ContactItem {
       word-break: break-all;

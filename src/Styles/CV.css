@@ -24,6 +24,16 @@
   margin: 6px 0px
 }
 
+/* Large desktops */
+@media only screen 
+  and (min-width: 1645px) {
+    .CVContent {
+      margin: 72px 15px 25px 432px;
+      max-width: 1200px;
+    }
+}
+
+/* iPhone X */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -32,3 +42,13 @@
       margin: 72px 15px 25px 150px;
     }
   }
+
+/* Galaxy S6 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .CVContent {
+      margin: 72px 15px 25px 150px;
+    }
+}

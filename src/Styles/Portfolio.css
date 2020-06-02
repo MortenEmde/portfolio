@@ -105,6 +105,7 @@
   max-height: 270px;
 }
 
+/* medium desktop */
 @media only screen 
   and (max-width: 1260px) {
     .PortfolioLinks {
@@ -112,6 +113,7 @@
     }
 }
 
+/* small desktop */
 @media only screen 
   and (max-width: 840px) {
     .PortfolioLinks {
@@ -119,11 +121,24 @@
     }
 }
 
+/* iPhone X */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .PortfolioItem {
-      max-width: 355px;
+      max-width: 375px;
+      margin: 10px 0;
+    }
+}
+
+/* Galaxy S6 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .PortfolioItem {
+      max-width: 360px;
+      margin: 10px 0;
     }
 }
