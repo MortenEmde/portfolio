@@ -132,11 +132,33 @@
     }
 }
 
+/* iPhone 6, 6S, 7 and 8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .PortfolioItem {
+      max-width: 375px;
+      margin: 10px 0;
+    }
+}
+
 /* Galaxy S6 */
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) {
+    .PortfolioItem {
+      max-width: 360px;
+      margin: 10px 0;
+    }
+}
+
+/* Galaxy S5 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
     .PortfolioItem {
       max-width: 360px;
       margin: 10px 0;

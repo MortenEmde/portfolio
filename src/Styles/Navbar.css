@@ -35,11 +35,31 @@
     }
 }
 
+/* iPhone 6, 6S, 7 and 8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .NavLink a {
+      min-width: 92px;
+    }
+}
+
 /* Galaxy S6 */
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) {
+    .NavLink a {
+      min-width: 87px;
+    }
+}
+
+/* Galaxy S5 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
     .NavLink a {
       min-width: 87px;
     }
