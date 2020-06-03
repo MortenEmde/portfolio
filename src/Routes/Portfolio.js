@@ -10,6 +10,7 @@ import calculatorLogo from '../Styles/Images/calculatorLogo.png';
 import caesarLogo from '../Styles/Images/caesarLogo.png';
 import easLogo from '../Styles/Images/easLogo.png';
 import googlehomeLogo from '../Styles/Images/googlehomeLogo.png';
+import restLogo from '../Styles/Images/restLogo.png';
 
 function Portfolio() {
   const headerText = "Portfolio";
@@ -24,6 +25,20 @@ function Portfolio() {
       <PortfolioItemParagraph paragraphText={paragraphText1} />
       <PortfolioItemParagraph paragraphText={paragraphText2} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
       <div className="PortfolioLinks">
+        <Link to="/portfolio/rest">
+        <div className="PortfolioItem">
+          <img className="PortfolioImageTall" src={restLogo} alt="restLogo" />
+          <div className="details">
+            <span className="title">
+              REST Api
+            </span>
+            <br/>
+            <span className="info">
+              REST Api build using the Express framework.
+            </span>
+          </div>
+        </div>
+        </Link>
         <Link to="/portfolio/centurylink">
         <div className="PortfolioItem">
           <img className="PortfolioImageTall" src={centurylinkLogo} alt="centurylinkLogo" />

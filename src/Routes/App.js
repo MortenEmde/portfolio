@@ -5,6 +5,7 @@ import Navbar from '../Components/Navbar'
 import AboutMe from './About';
 import Portfolio from './Portfolio';
 import CV from './CV';
+import Rest from './Rest';
 import Centurylink from './Centurylink';
 import Hackday from './Hackday';
 import ToDo from './ToDo';
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/" component={AboutMe} />
           <Route path="/cv" component={CV} />
           <Route exact path="/portfolio" component={Portfolio} />
+          <Route path="/portfolio/rest" component={Rest} />
           <Route path="/portfolio/centurylink" component={Centurylink} />
           <Route path="/portfolio/hackday" component={Hackday} />
           <Route path="/portfolio/todo" component={ToDo} />
