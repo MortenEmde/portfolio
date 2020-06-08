@@ -14,7 +14,7 @@ import restLogo from '../Styles/Images/restLogo.png';
 
 function Portfolio() {
   const headerText = "Portfolio";
-  const paragraphText1 = "This whole website has been put together by myself using react and hosted on Heroku. It is thereby an intyeractive part of my portfolio."
+  const paragraphText1 = "This whole website has been put together by myself using react and hosted on Heroku. It is thereby an interactive part of my portfolio."
   const paragraphText2 = "You can find the code for the full site on my Github";
   const paragraphLink1 = "https://github.com/MortenEmde/portfolio";
   const paragraphLinkText1 = "Here"
