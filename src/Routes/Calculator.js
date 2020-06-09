@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/Calculator.css';
-import calculatorImage from '../Styles/Images/calculatorLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
@@ -20,7 +19,7 @@ function Calculator() {
         <PortfolioItemParagraph paragraphText={paragraphText2} />
         <PortfolioItemParagraph paragraphText={paragraphText3} />
         <PortfolioItemParagraph paragraphText={paragraphText4} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
-        <a href="https://mortenemde.github.io/Calculator/Calculator.html" target="_blank" rel="noopener noreferrer"><img className="CalculatorImage" src={calculatorImage} alt="calculatorImage" /></a>
+        <a href="https://mortenemde.github.io/Calculator/Calculator.html" target="_blank" rel="noopener noreferrer"><img className="CalculatorImage" src={process.env.PUBLIC_URL + '/Images/calculatorLogo.png'} alt="calculatorImage" /></a>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/Rest.css';
-import restImage from '../Styles/Images/restLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
@@ -23,7 +22,7 @@ function Rest() {
         <PortfolioItemParagraph paragraphText={paragraphText3} />
         <PortfolioItemParagraph paragraphText={paragraphText4} />
         <PortfolioItemParagraph paragraphText={paragraphText5} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
-        <img className="RestImage" src={restImage} alt="restImage" />
+        <img className="RestImage" src={process.env.PUBLIC_URL + '/Images/restLogo.png'} alt="restImage" />
       </div>
     </div>
   );

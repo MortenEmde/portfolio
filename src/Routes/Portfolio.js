@@ -3,14 +3,6 @@ import { Link } from 'react-router-dom';
 import '../Styles/Portfolio.css';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
-import centurylinkLogo from '../Styles/Images/centurylinkLogo.png';
-import hackdayLogo from '../Styles/Images/hackdayLogo.png';
-import todoLogo from '../Styles/Images/todoLogo.png';
-import calculatorLogo from '../Styles/Images/calculatorLogo.png';
-import caesarLogo from '../Styles/Images/caesarLogo.png';
-import easLogo from '../Styles/Images/easLogo.png';
-import googlehomeLogo from '../Styles/Images/googlehomeLogo.png';
-import restLogo from '../Styles/Images/restLogo.png';
 
 function Portfolio() {
   const headerText = "Portfolio";
@@ -27,7 +19,7 @@ function Portfolio() {
       <div className="PortfolioLinks">
         <Link to="/portfolio/rest">
         <div className="PortfolioItem">
-          <img className="PortfolioImageTall" src={restLogo} alt="restLogo" />
+          <img className="PortfolioImageTall" src={process.env.PUBLIC_URL + '/Images/restLogo.png'} alt="restLogo" />
           <div className="details">
             <span className="title">
               REST Api
@@ -41,7 +33,7 @@ function Portfolio() {
         </Link>
         <Link to="/portfolio/centurylink">
         <div className="PortfolioItem">
-          <img className="PortfolioImageTall" src={centurylinkLogo} alt="centurylinkLogo" />
+          <img className="PortfolioImageTall" src={process.env.PUBLIC_URL + '/Images/centurylinkLogo.png'} alt="centurylinkLogo" />
           <div className="details">
             <span className="title">
               Centurylink Sustainability app
@@ -55,7 +47,7 @@ function Portfolio() {
         </Link>
         <Link to="/portfolio/hackday">
           <div className="PortfolioItem">
-            <img className="PortfolioImage" src={hackdayLogo} alt="hackdayLogo" />
+            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/hackdayLogo.png'} alt="hackdayLogo" />
             <div className="details">
               <span className="title">
                 Hackday
@@ -69,7 +61,7 @@ function Portfolio() {
         </Link>
         <Link to="/portfolio/todo">
           <div className="PortfolioItem">
-            <img className="PortfolioImage" src={todoLogo} alt="todoLogo" />
+            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/todoLogo.png'} alt="todoLogo" />
             <div className="details">
               <span className="title">
               To-Do List
@@ -83,7 +75,7 @@ function Portfolio() {
         </Link>
         <Link to="/portfolio/calculator">
           <div className="PortfolioItem">
-            <img className="PortfolioImageTall" src={calculatorLogo} alt="calculatorLogo" />
+            <img className="PortfolioImageTall" src={process.env.PUBLIC_URL + '/Images/calculatorLogo.png'} alt="calculatorLogo" />
             <div className="details">
               <span className="title">
                 Calculator
@@ -97,7 +89,7 @@ function Portfolio() {
         </Link>
         <Link to="/portfolio/caesar">
           <div className="PortfolioItem">
-            <img className="PortfolioImage" src={caesarLogo} alt="caesarLogo" />
+            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/caesarLogo.png'} alt="caesarLogo" />
             <div className="details">
               <span className="title">
                 Caesar Enigma Machine
@@ -111,7 +103,7 @@ function Portfolio() {
         </Link>
         <Link to="/portfolio/Etchasketch">
           <div className="PortfolioItem">
-            <img className="PortfolioImage" src={easLogo} alt="easLogo" />
+            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/easLogo.png'} alt="easLogo" />
             <div className="details">
               <span className="title">
                 Etch A Sketch
@@ -125,7 +117,7 @@ function Portfolio() {
         </Link>
         <Link to="/portfolio/googlehomepage">
           <div className="PortfolioItem">
-            <img className="PortfolioImage" src={googlehomeLogo} alt="googlehomeLogo" />
+            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/googlehomeLogo.png'} alt="googlehomeLogo" />
             <div className="details">
               <span className="title">
                 Mock Google Homepage

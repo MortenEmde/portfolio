@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/Etchasketch.css';
-import easImage from '../Styles/Images/easLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
@@ -20,7 +19,7 @@ function Etchasketch() {
         <PortfolioItemParagraph paragraphText={paragraphText2} />
         <PortfolioItemParagraph paragraphText={paragraphText3} />
         <PortfolioItemParagraph paragraphText={paragraphText4} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
-        <a href="https://mortenemde.github.io/Etch_A_Sketch/etch_a_sketch.html" target="_blank" rel="noopener noreferrer"><img className="EtchasketchImage" src={easImage} alt="EtchasketchImage" /></a>
+        <a href="https://mortenemde.github.io/Etch_A_Sketch/etch_a_sketch.html" target="_blank" rel="noopener noreferrer"><img className="EtchasketchImage" src={process.env.PUBLIC_URL + '/Images/easLogo.png'} alt="EtchasketchImage" /></a>
       </div>
     </div>
   );

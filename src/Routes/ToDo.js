@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/ToDo.css';
-import ToDoImage from '../Styles/Images/todoLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
@@ -21,7 +20,7 @@ function ToDo() {
         <PortfolioItemParagraph paragraphText={paragraphText2} />
         <PortfolioItemParagraph paragraphText={paragraphText3} />
         <PortfolioItemParagraph paragraphText={paragraphText4} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1} />
-      <a href="https://mortenemde.github.io/todoList/index.html" target="_blank" rel="noopener noreferrer"><img className="ToDoImage" src={ToDoImage} alt="ToDoImage" /></a>
+      <a href="https://mortenemde.github.io/todoList/index.html" target="_blank" rel="noopener noreferrer"><img className="ToDoImage" src={process.env.PUBLIC_URL + '/Images/todoLogo.png'} alt="ToDoImage" /></a>
       </div> 
     </div>
   );

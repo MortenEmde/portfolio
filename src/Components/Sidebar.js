@@ -1,11 +1,10 @@
 import React from 'react';
 import '../Styles/Sidebar.css';
-import logo from '../Styles/Images/logo512.png';
 
 function Sidebar() {
   return (
     <aside className="Sidebar">
-      <img className="HeadShot" src={logo} alt="Logo" />
+      <img className="HeadShot" src={process.env.PUBLIC_URL + '/Images/logo512.png'} alt="Logo" />
       <h2 className="ContactHeader">CONTACT</h2>
       <ul className="ContactList">
         <li className="ContactItem">

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/Hackday.css';
-import hackdayImage from '../Styles/Images/hackdayLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
@@ -24,7 +23,7 @@ function Hackday() {
         <PortfolioItemParagraph paragraphText={paragraphText4} />
         <PortfolioItemParagraph paragraphText={paragraphText5} />
         <PortfolioItemParagraph paragraphText={paragraphText6} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
-        <img className="HackdayImage" src={hackdayImage} alt="HackdayImage" />
+        <img className="HackdayImage" src={process.env.PUBLIC_URL + '/Images/hackdayLogo.png'} alt="HackdayImage" />
       </div>
     </div>
   );

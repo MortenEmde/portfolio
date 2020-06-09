@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/Caesar.css';
-import caesarImage from '../Styles/Images/caesarLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
@@ -22,7 +21,7 @@ function Caesar() {
         <PortfolioItemParagraph paragraphText={paragraphText3} />
         <PortfolioItemParagraph paragraphText={paragraphText4} />
         <PortfolioItemParagraph paragraphText={paragraphText5} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
-        <a href="https://mortenemde.github.io/Caesar/caesar.html" target="_blank" rel="noopener noreferrer"><img className="CaesarImage" src={caesarImage} alt="caesarImage" /></a>
+        <a href="https://mortenemde.github.io/Caesar/caesar.html" target="_blank" rel="noopener noreferrer"><img className="CaesarImage" src={process.env.PUBLIC_URL + '/Images/caesarLogo.png'} alt="caesarImage" /></a>
       </div>
     </div>
   );

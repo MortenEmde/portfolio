@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/Googlehomepage.css';
-import googlehomeImage from '../Styles/Images/googlehomeLogo.png';
 import PortfolioItemHeader from '../Components/PortfolioItemHeader';
 import PortfolioItemParagraph from '../Components/PortfolioItemParagraph';
 
@@ -21,7 +20,7 @@ function Googlehomepage() {
         <PortfolioItemParagraph paragraphText={paragraphText2} />
         <PortfolioItemParagraph paragraphText={paragraphText3} />
         <PortfolioItemParagraph paragraphText={paragraphText4} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1} />
-        <a href="https://mortenemde.github.io/google-homepage/" target="_blank" rel="noopener noreferrer"><img className="GooglehomepageImage" src={googlehomeImage} alt="GooglehomepageImage" /></a>
+        <a href="https://mortenemde.github.io/google-homepage/" target="_blank" rel="noopener noreferrer"><img className="GooglehomepageImage" src={process.env.PUBLIC_URL + '/Images/googlehomeLogo.png'} alt="GooglehomepageImage" /></a>
       </div>
     </div>
   );
