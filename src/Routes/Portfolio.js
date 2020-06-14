@@ -11,136 +11,105 @@ function Portfolio() {
   const paragraphLink1 = "https://github.com/MortenEmde/portfolio";
   const paragraphLinkText1 = "Here"
 
+  const PortfolioLinkData = [
+    {
+      route: "/portfolio/rest",
+      imageType: "PortfolioImageTall",
+      imageSrc: "/Images/restLogo.png",
+      imageAlt: "restLogo",
+      title: "REST Api",
+      info: "REST Api build using the Express framework."
+    },
+    {
+      route: "/portfolio/centurylink",
+      imageType: "PortfolioImageTall",
+      imageSrc: "/Images/centurylinkLogo.png",
+      imageAlt: "centurylinkLogo",
+      title: "Centurylink Sustainability app",
+      info: "&lt;/Salt&gt; examination MVP for Centurylink."
+    },
+    {
+      route: "/portfolio/hackday",
+      imageType: "PortfolioImage",
+      imageSrc: "/Images/hackdayLogo.png",
+      imageAlt: "hackdayLogo",
+      title: "Hackday",
+      info: "1 day challenge to integrate frontend with backend extenal api call."
+    },
+    {
+      route: "/portfolio/todo",
+      imageType: "PortfolioImage",
+      imageSrc: "/Images/todoLogo.png",
+      imageAlt: "todoLogo",
+      title: "To-Do List",
+      info: "My Take on a HTML To-Do List with local storage."
+    },
+    {
+      route: "/portfolio/calculator",
+      imageType: "PortfolioImageTall",
+      imageSrc: "/Images/calculatorLogo.png",
+      imageAlt: "calculatorLogo",
+      title: "Calculator",
+      info: "My take on the classic Javascript Calculator exercise."
+    },
+    {
+      route: "/portfolio/caesar",
+      imageType: "PortfolioImage",
+      imageSrc: "/Images/caesarLogo.png",
+      imageAlt: "caesarLogo",
+      title: "Caesar Enigma Machine",
+      info: "ASCII loop exercise."
+    },
+    {
+      route: "/portfolio/Etchasketch",
+      imageType: "PortfolioImage",
+      imageSrc: "/Images/easLogo.png",
+      imageAlt: "easLogo",
+      title: "Etch A Sketch",
+      info: "JavaScript + CSS Flexbox exercise to build a responsive HTML Etch A Sketch."
+    },
+    {
+      route: "/portfolio/googlehomepage",
+      imageType: "PortfolioImage",
+      imageSrc: "/Images/googlehomeLogo.png",
+      imageAlt: "googlehomeLogo",
+      title: "Mock Google Homepage",
+      info: "My first project combineing HTML and CSS. Goal: Create a visual copy of the Dutch Google Homepage."
+    },
+    {
+      route: "/portfolio",
+      imageType: "PortfolioImage",
+      imageSrc: "",
+      imageAlt: "",
+      title: "Stay Tuned",
+      info: "I will continue to upload my work on this page."
+    },
+  ]
+
   return (
     <div className="Portfolio">
       <PortfolioItemHeader headerText={headerText}/>
       <PortfolioItemParagraph paragraphText={paragraphText1} />
       <PortfolioItemParagraph paragraphText={paragraphText2} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
       <div className="PortfolioLinks">
-        <Link to="/portfolio/rest">
-        <div className="PortfolioItem">
-          <img className="PortfolioImageTall" src={process.env.PUBLIC_URL + '/Images/restLogo.png'} alt="restLogo" />
-          <div className="details">
-            <span className="title">
-              REST Api
-            </span>
-            <br/>
-            <span className="info">
-              REST Api build using the Express framework.
-            </span>
-          </div>
-        </div>
-        </Link>
-        <Link to="/portfolio/centurylink">
-        <div className="PortfolioItem">
-          <img className="PortfolioImageTall" src={process.env.PUBLIC_URL + '/Images/centurylinkLogo.png'} alt="centurylinkLogo" />
-          <div className="details">
-            <span className="title">
-              Centurylink Sustainability app
-            </span>
-            <br/>
-            <span className="info">
-              &lt;/Salt&gt; examination MVP for Centurylink
-            </span>
-          </div>
-        </div>
-        </Link>
-        <Link to="/portfolio/hackday">
+        {
+          PortfolioLinkData.map(({ route, imageType, imageSrc, imageAlt, title, info }, index) => 
+          <Link to={route} key={index}>
           <div className="PortfolioItem">
-            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/hackdayLogo.png'} alt="hackdayLogo" />
+            <img className={imageType} src={process.env.PUBLIC_URL + imageSrc} alt={imageAlt} />
             <div className="details">
               <span className="title">
-                Hackday
+                {title}
               </span>
               <br/>
               <span className="info">
-                1 day challenge to integrate frontend with backend extenal api call
+                {info}
               </span>
             </div>
           </div>
-        </Link>
-        <Link to="/portfolio/todo">
-          <div className="PortfolioItem">
-            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/todoLogo.png'} alt="todoLogo" />
-            <div className="details">
-              <span className="title">
-              To-Do List
-              </span>
-              <br/>
-              <span className="info">
-                My Take on a HTML To-Do List with local storage. 
-              </span>
-            </div>
-          </div>
-        </Link>
-        <Link to="/portfolio/calculator">
-          <div className="PortfolioItem">
-            <img className="PortfolioImageTall" src={process.env.PUBLIC_URL + '/Images/calculatorLogo.png'} alt="calculatorLogo" />
-            <div className="details">
-              <span className="title">
-                Calculator
-              </span>
-              <br/>
-              <span className="info">
-                My take on the classic Javascript Calculator exercise
-              </span>
-            </div>
-          </div>
-        </Link>
-        <Link to="/portfolio/caesar">
-          <div className="PortfolioItem">
-            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/caesarLogo.png'} alt="caesarLogo" />
-            <div className="details">
-              <span className="title">
-                Caesar Enigma Machine
-              </span>
-              <br/>
-              <span className="info">
-                ASCII loop exercise
-              </span>
-            </div>
-          </div>
-        </Link>
-        <Link to="/portfolio/Etchasketch">
-          <div className="PortfolioItem">
-            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/easLogo.png'} alt="easLogo" />
-            <div className="details">
-              <span className="title">
-                Etch A Sketch
-              </span>
-              <br/>
-              <span className="info">
-                JavaScript + CSS Flexbox exercise to build a responsive HTML Etch A Sketch
-              </span>
-            </div>
-          </div>
-        </Link>
-        <Link to="/portfolio/googlehomepage">
-          <div className="PortfolioItem">
-            <img className="PortfolioImage" src={process.env.PUBLIC_URL + '/Images/googlehomeLogo.png'} alt="googlehomeLogo" />
-            <div className="details">
-              <span className="title">
-                Mock Google Homepage
-              </span>
-              <br/>
-              <span className="info">
-                My first project combineing HTML and CSS to create a visual copy of the Dutch Google Homepage
-              </span>
-            </div>
-          </div>
-        </Link>
-        <div className="PortfolioItem">
-          <img className="PortfolioImage" alt=""/>
-          <div className="details">
-            <span className="title">
-              Stay Tuned
-            </span>
-            <br/>
-            <span className="info">
-              I will continue to upload my work on this page
-            </span>
-          </div>
-        </div>
+          </Link>
+          )
+        }
       </div>
     </div>
   );
