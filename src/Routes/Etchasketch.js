@@ -10,7 +10,7 @@ function Etchasketch() {
   const paragraphText3 = "The Etch_A_Sketch is a black background grid where each of the cells turns white when you move your mouse over. I added an option to change the grid size all the way from 1x1 cell up to 100x100 cells while staying within the predefined space. (By default, the program loads with 16x16 cells). There is also an available Reset button in case you want to start over your drawing.";
   const paragraphText4 = "If you click on the screenshot here below you can see the result and you can find the code on Github";
   const paragraphLink1 = "https://github.com/MortenEmde/Caesar";
-  const paragraphLinkText1 = "Here"
+  const paragraphLinkText1 = "Here";
   return (
     <div className="Etchasketch">
       <PortfolioItemHeader headerText={headerText}/>

@@ -13,6 +13,14 @@ function Portfolio() {
 
   const PortfolioLinkData = [
     {
+      route: "/portfolio/tictactoe",
+      imageType: "PortfolioImageTall",
+      imageSrc: "/Images/tictactoeLogo.png",
+      imageAlt: "tictactoeLogo",
+      title: "Tic Tac Toe",
+      info: "Tic Tac Toe build in vanilla JS with avatar selection."
+    },
+    {
       route: "/portfolio/rest",
       imageType: "PortfolioImageTall",
       imageSrc: "/Images/restLogo.png",
