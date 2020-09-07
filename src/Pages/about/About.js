@@ -11,7 +11,7 @@ function About() {
           Morten Emde Christensen
         </h1>
         <p>
-          I’m 29 years old and I grew up in a small town in Denmark called Korsør where I worked as an electrician for several years. However, over 10 years ago, I found love and moved to The Netherlands, where I’m living with my amazing fiancée and our two sweet cats.
+          I’m 30 years old and I grew up in a small town in Denmark called Korsør where I worked as an electrician for several years. However, over 10 years ago, I found love and moved to The Netherlands, where I’m living with my amazing fiancée and our two sweet cats.
         </p>
         <p>
           In Amsterdam, I quickly found a career in Team-leading and Mentoring. Even-though I loved guiding my team through complex systems, questions and situations I felt there was something missing.

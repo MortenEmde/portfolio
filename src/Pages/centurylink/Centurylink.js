@@ -1,20 +1,19 @@
 import React from 'react';
 import './Centurylink.css';
 import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
-import PortfolioItemParagraph from '../../Components/portfolioItemParagraph/PortfolioItemParagraph';
-import PortfolioItemImage from '../../Components/portfolioItemImage/PortfolioItemImage';
+import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Centurylink() {
   const headerText = "Centurylink";
-  const paragraphText1 = "⛔️👷‍♂️⛔️This Page is still under construction. Once done it will cover: Centurylink Sustainability app";
-
+  const paragraphs = [
+    "⛔️👷‍♂️⛔️This Page is still under construction. Once done it will cover: Centurylink Sustainability app"
+  ];
+  const imageAlt = "CenturylinkImage";
+  const imageFolderLocation = "/Images/centurylinkLogo.png";
   return (
     <div className="Centurylink">
       <PortfolioItemHeader headerText={headerText}/>
-      <div className="CenturylinkContent">
-        <PortfolioItemParagraph paragraphText={paragraphText1} />
-        <PortfolioItemImage imageAlt="CenturylinkImage" imageFolderLocation="/Images/centurylinkLogo.png" />
-      </div>
+      <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageAlt={imageAlt} />
     </div>
   );
 }
