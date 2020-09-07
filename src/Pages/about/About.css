@@ -1,6 +1,12 @@
 .AboutContent {
-  margin: 60px 15px 25px 245px;
+  margin: 0px 15px 0px 255px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   text-align: left;
+}
+
+.AboutHeader {
+  margin: 10px 0;
 }
 
 /* Large desktop */

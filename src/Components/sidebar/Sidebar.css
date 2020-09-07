@@ -1,7 +1,7 @@
 .Sidebar {
   background-color: #333;
   position: fixed;
-  width: 230px;
+  width: 240px;
   height: 100%;
   margin-top: -13px;
   display: flex;
@@ -13,7 +13,7 @@
 .HeadShot {
   width: 200px;
   align-self: center;
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 .ContactHeader {
@@ -22,16 +22,20 @@
 
 .ContactList {
   list-style-type: none;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0;
 }
 
 .ContactItem {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .ContactItem a {
   color: whitesmoke;
+}
+
+.ContactIcon {
+  margin-right: 8px;
 }
 
 /* large desktop */

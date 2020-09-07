@@ -6,7 +6,7 @@ import PortfolioItemContent from '../../Components/portfolioItemContent/portfoli
 function Centurylink() {
   const headerText = "Centurylink";
   const paragraphs = [
-    "⛔️👷‍♂️⛔️This Page is still under construction. Once done it will cover: Centurylink Sustainability app"
+    ["⛔️👷‍♂️⛔️This Page is still under construction. Once done it will cover: Centurylink Sustainability app"]
   ];
   const imageAlt = "CenturylinkImage";
   const imageFolderLocation = "/Images/centurylinkLogo.png";
