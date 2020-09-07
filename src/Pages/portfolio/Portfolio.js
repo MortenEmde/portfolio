@@ -6,12 +6,29 @@ import PortfolioItemParagraph from '../../Components/portfolioItemParagraph/Port
 
 function Portfolio() {
   const headerText = "Portfolio";
-  const paragraphText1 = "This whole website has been put together by myself using react and hosted on Heroku. It is thereby an interactive part of my portfolio."
-  const paragraphText2 = "You can find the code for the full site on my Github";
-  const paragraphLink1 = "https://github.com/MortenEmde/portfolio";
-  const paragraphLinkText1 = "Here"
+  const paragraphs = [
+    ["This whole website has been put together by myself using ReactJS and is hosted on Heroku. It is thereby an interactive part of my portfolio for you to enjoy."],
+    ["You can find the code for the full site on my Github", "https://github.com/MortenEmde/portfolio", "Here"],
+    ["Here below you can find links to some of my other projects."]
+  ];
 
-  const PortfolioLinkData = [
+  const portfolioLinkData = [
+    {
+      route: "/portfolio/hadesboontracker",
+      imageType: "PortfolioImage",
+      imageSrc: "/Images/hadesLogo.png",
+      imageAlt: "hadesLogo",
+      title: "Hades Boon Tracker",
+      info: "Helping tool for the Roguelike Videogame Hades with a simple Express backend and frontend in ReactTS"
+    },
+    {
+      route: "/portfolio/todoreactandvue",
+      imageType: "PortfolioImage",
+      imageSrc: "/Images/todoReactAndVueLogo.png",
+      imageAlt: "todoReactAndVueLogo",
+      title: "To-Do List in React + TS and Vue",
+      info: "To-Do List exercise executed 2 additional ways. Using React + TypeScript and in VueJS"
+    },
     {
       route: "/portfolio/tictactoe",
       imageType: "PortfolioImageTall",
@@ -34,7 +51,7 @@ function Portfolio() {
       imageSrc: "/Images/centurylinkLogo.png",
       imageAlt: "centurylinkLogo",
       title: "Centurylink Sustainability app",
-      info: "&lt;/Salt&gt; examination MVP for Centurylink."
+      info: "Salt examination MVP for Centurylink."
     },
     {
       route: "/portfolio/hackday",
@@ -97,11 +114,12 @@ function Portfolio() {
   return (
     <div className="Portfolio">
       <PortfolioItemHeader headerText={headerText}/>
-      <PortfolioItemParagraph paragraphText={paragraphText1} />
-      <PortfolioItemParagraph paragraphText={paragraphText2} paragraphLink={paragraphLink1} paragraphLinkText={paragraphLinkText1}/>
+      {paragraphs.map((paragraph, index) => 
+        <PortfolioItemParagraph key={index} paragraphText={paragraph[0]} paragraphLink={paragraph[1]} paragraphLinkText={paragraph[2]}/>
+      )}
       <div className="PortfolioLinks">
         {
-          PortfolioLinkData.map(({ route, imageType, imageSrc, imageAlt, title, info }, index) => 
+          portfolioLinkData.map(({ route, imageType, imageSrc, imageAlt, title, info }, index) => 
           <Link to={route} key={index}>
           <div className="PortfolioItem">
             <img className={imageType} src={process.env.PUBLIC_URL + imageSrc} alt={imageAlt} />
