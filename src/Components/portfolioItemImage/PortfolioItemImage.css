@@ -1,0 +1,8 @@
+.PortfolioItemImage {
+  max-height: 450px;
+  max-width: 70%;
+  border: 1px solid #111;
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}

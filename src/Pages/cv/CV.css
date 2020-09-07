@@ -1,0 +1,74 @@
+.CVContent {
+  margin: 60px 15px 25px 245px;
+  text-align: left;
+}
+
+.JobDescription, .LanguageList, .CertificateList, .TechList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.JobTitle, .JobDuration, .TechType {
+  margin: 0;
+}
+
+.SubHeader {
+  border-bottom: 1px solid slategray;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.Language, .Certificate, .TechItem {
+  margin: 6px 0px
+}
+
+/* Large desktops */
+@media only screen 
+  and (min-width: 1645px) {
+    .CVContent {
+      margin: 60px 15px 25px 432px;
+      max-width: 1200px;
+    }
+}
+
+/* iPhone X */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .CVContent {
+      margin: 60px 15px 25px 150px;
+    }
+}
+
+/* iPhone 6, 6S, 7 and 8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .CVContent {
+      margin: 60px 15px 25px 150px;
+    }
+}
+
+/* Galaxy S6 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+    .CVContent {
+      margin: 60px 15px 25px 150px;
+    }
+}
+
+/* Galaxy S5 */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .CVContent {
+      margin: 60px 15px 25px 150px;
+    }
+}
