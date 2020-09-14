@@ -1,19 +1,20 @@
 .CVContent {
+  display: flex;
   margin: 0px 15px 0px 255px;
   padding-top: 1px;
   padding-bottom: 1px;
   text-align: left;
 }
 
-.JobDescription, .LanguageList, .CertificateList, .TechList {
+.JobDescription, .EducationDescription, .LanguageList, .CertificateList, .TechList {
   list-style-type: none;
   padding: 0;
   margin-top: 10px;
   margin-bottom: 25px;
 }
 
-.JobTitle, .JobDuration, .TechType {
-  margin: 0;
+.JobTitle, .EducationTitle, .JobDuration, .EducationDuration, .JobTask, .EducationTask, .TechType {
+  margin: 6px 0px;
 }
 
 .SubHeader {
@@ -22,8 +23,18 @@
   margin-bottom: 10px;
 }
 
+.Experience{
+  padding-right: 10px;
+}
+
+.Skills {
+  width: 1000px;
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+
 .Language, .Certificate, .TechItem {
-  margin: 6px 0px
+  margin: 6px 0px;
 }
 
 /* Large desktops */
@@ -35,12 +46,26 @@
     }
 }
 
+/* Small Window desktops */
+@media only screen 
+  and (max-width: 790px) {
+    .CVContent {
+      display: block;
+    }
+    .Skills {
+      width: auto;
+      padding-left: 0;
+      border-left: none;
+    }
+}
+
 /* iPhone X */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .CVContent {
+      display: block;
       margin: 60px 15px 25px 150px;
     }
 }
@@ -51,6 +76,7 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     .CVContent {
+      display: block;
       margin: 60px 15px 25px 150px;
     }
 }
@@ -61,6 +87,7 @@
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) {
     .CVContent {
+      display: block;
       margin: 60px 15px 25px 150px;
     }
 }
@@ -71,6 +98,7 @@
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
     .CVContent {
+      display: block;
       margin: 60px 15px 25px 150px;
     }
 }
