@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Portfolio.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemParagraph from '../../Components/portfolioItemParagraph/PortfolioItemParagraph';
 
 function Portfolio() {
   const headerText = "Portfolio";
   const paragraphs = [
-    ["This whole website has been put together by myself using ReactJS and is hosted on Heroku. It is thereby an interactive part of my portfolio for you to enjoy."],
+    ["This whole website has been put together by myself using ReactJS and is hosted on Netlify. It is thereby an interactive part of my portfolio for you to enjoy."],
     ["You can find the code for the full site on my Github", "https://github.com/MortenEmde/portfolio", "Here"],
     ["Here below you can find links to some of my other projects."]
   ];
@@ -113,7 +113,7 @@ function Portfolio() {
 
   return (
     <div className="Portfolio">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       {paragraphs.map((paragraph, index) => 
         <PortfolioItemParagraph key={index} paragraphText={paragraph[0]} paragraphLink={paragraph[1]} paragraphLinkText={paragraph[2]}/>
       )}

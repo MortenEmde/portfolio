@@ -1,6 +1,6 @@
 import React from 'react';
 import './Googlehomepage.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Googlehomepage() {
@@ -16,7 +16,7 @@ function Googlehomepage() {
   const imageFolderLocation = "/Images/googlehomeLogo.png";
   return (
     <div className="Googlehomepage">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageLink={imageLink} imageAlt={imageAlt} />
     </div>
   );

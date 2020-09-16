@@ -1,6 +1,6 @@
 import React from 'react';
 import './Etchasketch.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Etchasketch() {
@@ -16,7 +16,7 @@ function Etchasketch() {
   const imageFolderLocation = "/Images/easLogo.png";
   return (
     <div className="Etchasketch">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageLink={imageLink} imageAlt={imageAlt} />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Rest.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Rest() {
@@ -16,7 +16,7 @@ function Rest() {
   const imageAlt = "RestImage";
   return (
     <div className="Rest">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageAlt={imageAlt} />
     </div>
   );

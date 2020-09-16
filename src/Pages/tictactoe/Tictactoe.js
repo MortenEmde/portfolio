@@ -1,6 +1,6 @@
 import React from 'react';
 import './Tictactoe.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Tictactoe() {
@@ -18,7 +18,7 @@ function Tictactoe() {
   const imageAlt = "TictactoeImage" ;
   return (
     <div className="Tictactoe">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageLink={imageLink} imageAlt={imageAlt} />
     </div>
   );

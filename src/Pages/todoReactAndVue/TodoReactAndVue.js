@@ -1,6 +1,6 @@
 import React from 'react';
 import './TodoReactAndVue.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function TodoReactAndVue() {
@@ -19,7 +19,7 @@ function TodoReactAndVue() {
   const imageAlt = "todoReactAndVueImage";
   return (
     <div className="TodoReactAndVue">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageLink={imageLink} imageAlt={imageAlt} />
     </div>
   );

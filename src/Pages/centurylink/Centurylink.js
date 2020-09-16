@@ -1,6 +1,6 @@
 import React from 'react';
 import './Centurylink.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Centurylink() {
@@ -12,7 +12,7 @@ function Centurylink() {
   const imageFolderLocation = "/Images/centurylinkLogo.png";
   return (
     <div className="Centurylink">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageAlt={imageAlt} />
     </div>
   );

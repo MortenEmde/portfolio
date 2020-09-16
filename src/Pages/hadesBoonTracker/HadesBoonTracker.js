@@ -1,6 +1,6 @@
 import React from 'react';
 import './HadesBoonTracker.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function HadesBoonTracker() {
@@ -17,7 +17,7 @@ function HadesBoonTracker() {
   const imageFolderLocation = "/Images/hadesLogo.png";
   return (
     <div className="HadesBoonTracker">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageAlt={imageAlt} />
     </div>
   );

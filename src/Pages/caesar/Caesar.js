@@ -1,6 +1,6 @@
 import React from 'react';
 import './Caesar.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Caesar() {
@@ -18,7 +18,7 @@ function Caesar() {
   const imageFolderLocation = "/Images/caesarLogo.png";
   return (
     <div className="Caesar">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageLink={imageLink} imageAlt={imageAlt} />
     </div>
   );

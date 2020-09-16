@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hackday.css';
-import PortfolioItemHeader from '../../Components/portfolioItemHeader/PortfolioItemHeader';
+import PageHeader from '../../Components/pageHeader/PageHeader';
 import PortfolioItemContent from '../../Components/portfolioItemContent/portfolioItemContent';
 
 function Hackday() {
@@ -17,7 +17,7 @@ function Hackday() {
   const imageFolderLocation = "/Images/hackdayLogo.png";
   return (
     <div className="Hackday">
-      <PortfolioItemHeader headerText={headerText}/>
+      <PageHeader headerText={headerText}/>
       <PortfolioItemContent paragraphs={paragraphs} imageFolderLocation={imageFolderLocation} imageAlt={imageAlt} />
     </div>
   );

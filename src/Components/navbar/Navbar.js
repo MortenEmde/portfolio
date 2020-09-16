@@ -10,11 +10,14 @@ function Navbar() {
           <Link to="/">About Me</Link>
         </li>
         <li className="NavLink">
+          <Link to="/portfolio">Portfolio</Link>
+        </li>
+        <li className="NavLink">
           <Link to="/cv">CV</Link>
         </li>
         <li className="NavLink">
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
+        <Link to="/biography">Biography</Link>
+      </li>
       </ul>
     </nav>
   );
