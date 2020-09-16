@@ -10,8 +10,9 @@
   margin-right: auto;
 }
 
-.AboutHeader {
-  margin: 10px 0;
+.AboutGreeting {
+  margin: 0;
+  padding-top: 20px;
 }
 
 .AboutImage {
@@ -38,7 +39,7 @@
 /* Large desktop */
 @media only screen 
   and (min-height: 900px) {
-    .AboutImage {
-      margin-top: 15%;
+    .AboutGreeting {
+      padding-top: 15%;
     }
 }

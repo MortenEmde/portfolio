@@ -12,14 +12,17 @@ function About() {
       <PageHeader headerText="Morten Christensen" />
       <div className="AboutWrapper">
         <div className="AboutContent">
-          <img className="AboutImage" src={process.env.PUBLIC_URL + '/Images/logo512.png'} alt="Logo" />
-          <p>
-            Hi, I'm Morten Emde Christensen. Welcome to my always-under-construction webpage! I hope that you enjoy your time here.
+          <p className="AboutGreeting">
+            Hi, I'm Morten Emde Christensen!
           </p>
-          <p>
+          <img className="AboutImage" src={process.env.PUBLIC_URL + '/Images/logo512.png'} alt="Logo" />
+          <p className="AboutParagraph">
+          Welcome to my always-under-construction webpage! I hope that you enjoy your time here.
+          </p>
+          <p className="AboutParagraph">
             You can check out what I currently am up to via my <Link to="/portfolio">Portfolio page.</Link>
           </p>
-          <p>
+          <p className="AboutParagraph">
             I would also advise you to have a look at my <Link to="/biography">Biography</Link> and <Link to="/cv">CV</Link> If you are more curious about me and my professional experience.
           </p>
           <ul className="AboutContactList">
