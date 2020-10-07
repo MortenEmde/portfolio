@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from '../Components/navbar/Navbar'
 import ScrollToTop from '../Components/scrollToTop/ScrollToTop';
@@ -21,7 +21,7 @@ import Biography from  '../Pages/biography/Biography';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <div className="Content">
@@ -45,7 +45,7 @@ function App() {
         </Switch>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

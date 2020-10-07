@@ -8,39 +8,10 @@ function CV() {
       <Sidebar />
       <div className="CVContent">
         <div className="Experience">
-          <h2 className="SubHeader">EDUCATION AND TRAINING</h2>
+          <h2 className="SubHeader">EDUCATION</h2>
           <div className="Education">
             <h4 className="EducationTitle">
-              FULL STACK JAVASCRIPT COURSE
-            </h4>
-            <h5 className="EducationDuration">
-              School of Applied Technology &lt;/Salt&gt; / Amsterdam / January 2020 - April 2020 
-            </h5>
-            <ul className="EducationDescription">
-              <li className="EducationTask">
-                Highly paced and very intense training program. Turning hobby coders into productive full stack developers.
-              </li>
-            </ul>
-          </div>
-          <div className="Education">
-            <h4 className="EducationTitle">
-              FULL STACK JAVASCRIPT
-            </h4>
-            <h5 className="EducationDuration">
-              The Odin Project / Amsterdam / October 2019 - January 2020
-            </h5>
-            <ul className="EducationDescription">
-              <li className="EducationTask">
-                Full time self-study of TOP’s <a href="https://www.theodinproject.com/tracks/full-stack-javascript" target="_blank" rel="noopener noreferrer">Full Stack JavaScript curriculum</a>.
-              </li>
-              <li className="EducationTask">
-                Learning the basics from Web Development 101 to building and deploying responsive websites from scratch.
-              </li>
-            </ul>
-          </div>
-          <div className="Education">
-            <h4 className="EducationTitle">
-              ELECTRICIAN
+              ELECTRICAL CONSTRUCTION & ENGINEERING 
             </h4>
             <h5 className="EducationDuration">
               Selandia - Center for Erhvervsrettet Uddannelse / Slagelse - Denmark / August 2006 - January 2011 
@@ -66,6 +37,32 @@ function CV() {
             </ul>
           </div>
           <h2 className="SubHeader">WORK EXPERIENCE</h2>
+          <div className="Job">
+            <h4 className="JobTitle">
+              FULLSTACK JAVASCRIPT DEVELOPER
+            </h4>
+            <h5 className="JobDuration">
+              &lt;/SALT&gt; / Amsterdam / February 2020 – Present
+            </h5>
+            <ul className="JobDescription">
+              <li className="JobTask">
+                Build projects and MVP’s for clients while closely following Agile workflow, with weekly sprints and daily standups
+              </li>
+            </ul>
+          </div>
+          <div className="Job">
+            <h4 className="JobTitle">
+              FULLSTACK JAVASCRIPT DEVELOPER
+            </h4>
+            <h5 className="JobDuration">
+              Freelance / January 2019 – Present
+            </h5>
+            <ul className="JobDescription">
+              <li className="JobTask">
+                Develop projects, such as websites and other applications, for private clients.
+              </li>
+            </ul>
+          </div>
           <div className="Job">
             <h4 className="JobTitle">
               TEAM LEAD CUSTOMER SERVICE AND SALES
@@ -214,6 +211,12 @@ function CV() {
               <li className="TechItem">
                 TypeScript
               </li>
+              <li className="TechItem">
+                HTTP
+              </li>
+              <li className="TechItem">
+                SQL
+              </li>
             </ul>
           </div>
           <div className="Tech">
@@ -231,19 +234,13 @@ function CV() {
                 REST
               </li>
               <li className="TechItem">
-                HTTP/JSON/AJAX
-              </li>
-              <li className="TechItem">
                 MongoDB
-              </li>
-              <li className="TechItem">
-                SQL
               </li>
               <li className="TechItem">
                 GraphQL
               </li>
               <li className="TechItem">
-                Handlebars
+                AWS
               </li>
             </ul>
           </div>
@@ -268,6 +265,12 @@ function CV() {
                 HTML
               </li>
               <li className="TechItem">
+                JSON
+              </li>
+              <li className="TechItem">
+                AJAX
+              </li>
+              <li className="TechItem">
                 jQuery
               </li>
               <li className="TechItem">
@@ -283,37 +286,42 @@ function CV() {
           </div>
           <div className="Tech">
             <h4 className="TechType">
-              TOOLS AND PROCESSES
+              BUILD TOOLS
             </h4>
             <ul className="TechList">
-              <li className="TechItem">
-                Visual Studio Code
-              </li>
               <li className="TechItem">
                 NPM
               </li>
               <li className="TechItem">
                 Yarn
               </li>
-              <li className="TechItem">
-                Mocha
-              </li>
-              <li className="TechItem">
-                Git
-              </li>
-              <li className="TechItem">
-                TDD
-              </li>
-              <li className="TechItem">
-                Linting
-              </li>
-              <li className="TechItem">
-                Agile work methods
-              </li>
-              <li className="TechItem">
-                Lean and Six Sigma methods
-              </li>
             </ul>
+          </div>
+          <div className="Tech">
+          <h4 className="TechType">
+            DEVELOPMENT TOOLS
+          </h4>
+          <ul className="TechList">
+            <li className="TechItem">
+              Git
+            </li>
+            <li className="TechItem">
+              Linting with ESLint
+            </li>
+            <li className="TechItem">
+              Testing with Mocha
+            </li>
+          </ul>
+          </div>
+          <div className="Tech">
+          <h4 className="TechType">
+            TOOLS AND PROCESSES
+          </h4>
+          <ul className="TechList">
+            <li className="TechItem">
+              Fully proficient with Agile workflow, Lean, Six Sigma and TDD.
+            </li>
+          </ul>
           </div>
           <h2 className="SubHeader">CERTIFICATES</h2>
           <ul className="CertificateList">
